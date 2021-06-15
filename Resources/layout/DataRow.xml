@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#0D9185"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/imageback"
+        android:layout_width="355dp"
+        android:layout_height="165dp"
+        android:background="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.4"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.4" />
+
+    <ImageView
+        android:id="@+id/imagena"
+        android:layout_width="162dp"
+        android:layout_height="132dp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageback"
+        app:layout_constraintEnd_toEndOf="@+id/imageback"
+        app:layout_constraintHorizontal_bias="0.933"
+        app:layout_constraintStart_toStartOf="@+id/imageback"
+        app:layout_constraintTop_toTopOf="@+id/imageback"
+        app:layout_constraintVertical_bias="0.439" />
+
+    <TextView
+        android:id="@+id/txtnombre"
+        android:layout_width="135dp"
+        android:layout_height="63dp"
+        android:text="TextView"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textColor="#FF067167"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageback"
+        app:layout_constraintEnd_toEndOf="@+id/imageback"
+        app:layout_constraintHorizontal_bias="0.128"
+        app:layout_constraintStart_toStartOf="@+id/imageback"
+        app:layout_constraintTop_toTopOf="@+id/imageback"
+        app:layout_constraintVertical_bias="0.19"
+        tools:text="País" />
+
+    <TextView
+        android:id="@+id/txtdura"
+        android:layout_width="131dp"
+        android:layout_height="43dp"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textColor="#E9295B87"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageback"
+        app:layout_constraintEnd_toEndOf="@+id/imageback"
+        app:layout_constraintHorizontal_bias="0.125"
+        app:layout_constraintStart_toStartOf="@+id/imageback"
+        app:layout_constraintTop_toTopOf="@+id/imageback"
+        app:layout_constraintVertical_bias="0.852" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

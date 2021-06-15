@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#0D9185"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/txtpais"
+        android:layout_width="280dp"
+        android:layout_height="49dp"
+        android:layout_marginTop="78dp"
+        android:layout_marginEnd="17dp"
+        android:layout_marginBottom="50dp"
+        android:background="#D812736A"
+        android:textColor="#FFFFFF"
+        android:textSize="32sp"
+        app:layout_constraintBottom_toTopOf="@+id/imga"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imga"
+        android:layout_width="170dp"
+        android:layout_height="138dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="10dp"
+        app:layout_constraintBottom_toTopOf="@+id/imgb"
+        app:layout_constraintEnd_toStartOf="@+id/txtdescripcion"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/imgb"
+        android:layout_width="170dp"
+        android:layout_height="138dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="19dp"
+        app:layout_constraintBottom_toTopOf="@+id/imgcd"
+        app:layout_constraintEnd_toStartOf="@+id/txtdescripcion"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/txtdescripcion"
+        android:layout_width="180dp"
+        android:layout_height="328dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="17dp"
+        android:layout_marginBottom="24dp"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toTopOf="@+id/imgc"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtpais" />
+
+    <ImageView
+        android:id="@+id/imgc"
+        android:layout_width="178dp"
+        android:layout_height="140dp"
+        android:layout_marginEnd="18dp"
+        android:layout_marginBottom="50dp"
+        app:layout_constraintBottom_toTopOf="@+id/btnsiguiente"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <ImageView
+        android:id="@+id/imgmundo"
+        android:layout_width="72dp"
+        android:layout_height="73dp"
+        android:layout_marginStart="17dp"
+        android:layout_marginTop="70dp"
+        android:layout_marginBottom="34dp"
+        app:layout_constraintBottom_toTopOf="@+id/imga"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txtdestinos"
+        android:layout_width="166dp"
+        android:layout_height="81dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="16dp"
+        android:textSize="22sp"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toTopOf="@+id/imgduracion"
+        app:layout_constraintEnd_toStartOf="@+id/imgc"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/txtaerolinea"
+        android:layout_width="148dp"
+        android:layout_height="39dp"
+        android:layout_marginEnd="39dp"
+        android:layout_marginBottom="28dp"
+        android:textSize="22sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/btnsiguiente" />
+
+    <ImageView
+        android:id="@+id/imgaero"
+        android:layout_width="35dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="18dp"
+        android:layout_marginBottom="28dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/txtaerolinea"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/imgduracion"
+        android:layout_width="35dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="18dp"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintBottom_toTopOf="@+id/imgcosto"
+        app:layout_constraintEnd_toStartOf="@+id/txtduracion"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/txtduracion"
+        android:layout_width="115dp"
+        android:layout_height="39dp"
+        android:layout_marginEnd="12dp"
+        android:layout_marginBottom="22dp"
+        android:textSize="22sp"
+        app:layout_constraintBottom_toTopOf="@+id/txtcosto"
+        app:layout_constraintEnd_toStartOf="@+id/imgc" />
+
+    <TextView
+        android:id="@+id/txtcosto"
+        android:layout_width="97dp"
+        android:layout_height="39dp"
+        android:layout_marginEnd="90dp"
+        android:layout_marginBottom="30dp"
+        android:textSize="22sp"
+        app:layout_constraintBottom_toTopOf="@+id/txtaerolinea"
+        app:layout_constraintEnd_toStartOf="@+id/btnsiguiente" />
+
+    <ImageView
+        android:id="@+id/imgcosto"
+        android:layout_width="35dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="18dp"
+        android:layout_marginBottom="24dp"
+        app:layout_constraintBottom_toTopOf="@+id/imgaero"
+        app:layout_constraintEnd_toStartOf="@+id/txtcosto"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/imgcd"
+        android:layout_width="35dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="18dp"
+        android:layout_marginBottom="12dp"
+        app:layout_constraintBottom_toTopOf="@+id/txtdestinos"
+        app:layout_constraintEnd_toStartOf="@+id/textView2"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="109dp"
+        android:layout_height="45dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="12dp"
+        android:text="Ciudades:"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/txtdestinos"
+        app:layout_constraintEnd_toStartOf="@+id/txtdescripcion" />
+
+    <Button
+        android:id="@+id/btnsiguiente"
+        android:layout_width="109dp"
+        android:layout_height="87dp"
+        android:layout_marginEnd="28dp"
+        android:layout_marginBottom="23dp"
+        android:text="Me Interesa"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:cornerRadius="12sp"
+        android:background="#FF07534C"
+        android:textColor="#FFFFFF"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
